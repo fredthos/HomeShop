@@ -20,6 +20,14 @@ public class Car extends Vehicle {
         this.motor = motor;
         this.options = options;
     }
+    @Override
+    public void start() {
+        System.out.println("Je suis " + modelName + "je consomme " + litrePer100km + " au 100 km et je demarre ! ");
+    }
+    @Override
+    public void stop() {
+        System.out.println("Je suis " + modelName + "j'arrete mon moteur ");
+    }
 
     public void startHeadlight() {
         System.out.println("J'allume mes phares");

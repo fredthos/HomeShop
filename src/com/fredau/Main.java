@@ -1,5 +1,7 @@
 package com.fredau;
 
+import com.fredau.Garage.Bike;
+import com.fredau.Garage.Vehicle;
 import com.fredau.homeshop.*;
 
 public class Main {
@@ -13,8 +15,11 @@ public class Main {
         Customer customer = new Customer("Juste Leblanc", "19 rue Germain Pilon, Paris");
 
         Bill bill = new Bill(customer);
+
         bill.addProduct(cafe, 1);
         bill.addProduct(tv, 1);
         bill.addProduct(fridge, 1);
+
+        Vehicle v = new Bike();
     }
 }

@@ -1,7 +1,7 @@
 package com.fredau.Garage;
 
-public class Vehicle {
-    private String modelName;
+public abstract class Vehicle {
+    protected String modelName;
     private String description;
     private String manufacturer;
     private int year;
@@ -9,6 +9,9 @@ public class Vehicle {
     private int speed;
     private int[] dimensions = new int[3];
     private int weight;
+
+    public Vehicle() {
+    }
 
     public Vehicle(String modelName, String description, String manufacturer, int yeah, String color, int speed, int[] dimensions, int weight) {
         this.modelName = modelName;
@@ -21,13 +24,9 @@ public class Vehicle {
         this.weight = weight;
     }
 
-    public void start() {
-        System.out.println("Je suis " + modelName + " et je  démarre");
-    }
+    public abstract void start();
 
-    public void stop() {
-        System.out.println("Je suis " + modelName + " et je m'arrête");
-    }
+    public abstract void stop();
 
     public String getModelName() {
         return modelName;
