@@ -2,7 +2,7 @@ package com.fredau.homeshop;
 
 public class TakeAwayDelivery implements Delivery{
     @Override
-    public double price() {
+    public double getprice() {
         return 0;
     }
 }

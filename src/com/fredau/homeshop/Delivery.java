@@ -1,5 +1,5 @@
 package com.fredau.homeshop;
 
 public interface Delivery {
-    public double price();
+    public double getprice();
 }
